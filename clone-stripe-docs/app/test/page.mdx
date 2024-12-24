@@ -1,0 +1,39 @@
+# Documentation
+
+Exlore our guides and examples to integrate Stripe.
+
+## Try it out
+
+<HorizontalCodeTabs>
+
+### !! Start a payment
+
+```terminal !
+stripe payment_intents create --amount 1099 --currency "usd"
+```
+
+### !! Sell a product
+
+```terminal !
+stripe products create --name "Red T-shirt" --data default-price-data[unit_amount]=1099 --data default-price-data[currency]=usd
+```
+
+### !! Issue coupons
+
+```terminal !
+stripe coupons create --amount-off 2000 --currency "usd"
+```
+
+### !! Get your balance
+
+```terminal !
+stripe balance retrieve
+```
+
+### !! Manage taxes
+
+```terminal !
+stripe tax_rates create --display-name VAT --description "VAT Germany" --jurisdiction DE --percentage 16 --inclusive false
+```
+
+</HorizontalCodeTabs>
