@@ -3,7 +3,7 @@ import createMDX from "@next/mdx"
 import { remarkCodeHike, recmaCodeHike, CodeHikeConfig } from "codehike/mdx"
 
 const chConfig: CodeHikeConfig = {
-  // components: { code: "Code" },
+  components: { code: "DocsKitCode", inlineCode: "DocsKitInlineCode" },
 }
 
 /** @type {import('next').NextConfig} */

@@ -11,6 +11,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "ch-border": "#1A2652", // editorGroup.border
+        "ch-selection": "#ffffff1a", // editor.selectionBackground
+        "ch-tabs-background": "#1a2652", // editorGroupHeader.tabsBackground
+        "ch-tab-active-foreground": "#ffffffb3", // tab.activeForeground
+        "ch-tab-inactive-foreground": "#a4cdfe", // tab.inactiveForeground
+        "ch-background": "#212d63", // editor.background
+        "ch-active-border": "var(--ch-24)", // tab.activeBorderTop
+        "ch-line-number": "#ffffff4d", // editorLineNumber.foreground
       },
       borderRadius: {
         lg: "var(--radius)",
